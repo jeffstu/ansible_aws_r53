@@ -1,0 +1,18 @@
+---
+# vars file for route53
+ttl: "3600"
+state: "present"
+zone: "example.co.uk"
+dns_records:
+  - subdomain: "www."
+    record_value: "10.10.10.10"
+    record_type: A
+  - subdomain: ""
+    record_value: "10.10.10.10"
+    record_type: A
+  - subdomain: ""
+    record_value: "10.10.10.10"
+    record_type: A
+  - subdomain: ""
+    record_value: '"MS=exampletxtrecord"'
+    record_type: TXT

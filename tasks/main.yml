@@ -1,0 +1,13 @@
+---
+# tasks file for route53
+- name: Add Route53 DNS Records
+  route53:
+    state: "{{ state }}"
+    zone: "{{ zone }}"
+    record: "{{ item.subdomain }}{{ zone }}"
+    type: "{{ item.record_type }}"
+    ttl: "{{ ttl }}"
+    value: "{{ item.record_value }}"
+    overwrite: true
+    wait: true
+  loop: "{{ dns_records }}"
