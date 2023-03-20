@@ -1,5 +1,5 @@
 ---
-# tasks file for route53
+# tasks file for ransible_aws_r53
 - name: Add Route53 DNS Records
   route53:
     state: "{{ state }}"

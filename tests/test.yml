@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - route53
+    - ansible_aws_r53
