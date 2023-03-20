@@ -4,10 +4,13 @@ Ansible role for aws route 53
 # Requierments
 
 amazon.aws collection
+````
     ansible-galaxy collection install amazon.aws
-
+````
 boto3
+````
     pip3 install boto3
+````
 
 # Example Playbook
 ````
