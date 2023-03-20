@@ -1,4 +1,4 @@
-# ansi_r53
+# r53
 Ansible role for aws route 53
 
 # Requierments
@@ -25,6 +25,6 @@ boto3
   # tasks: 
   
   roles:
-    - ansi_r53
+    - r53
 
 ````
