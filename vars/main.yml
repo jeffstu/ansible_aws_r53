@@ -1,5 +1,5 @@
 ---
-# vars file for ansible_aws_r53
+# vars file for ansible_r53
 ttl: "3600"
 state: "present"
 zone: "example.co.uk"
